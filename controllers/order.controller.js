@@ -138,9 +138,11 @@ module.exports.assignOrder=function(req,res)
     			  	OrderStage.forge({order_stages:req.params.order_stages})
                               .fetch()
     			  	    	  .then(function(orderstage){
-                              		Order.save({
+                                  
+                              		order1.save({
                 						order_stages_id:orderstage.id
             							})
+                                
     			  	    		})
     			  		 		res.json({
                 					type: true,
