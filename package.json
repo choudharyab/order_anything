@@ -1,0 +1,40 @@
+{
+  "name": "Order Anything system",
+  "version": "1.0.0",
+  "description": "This is a node package for order Anything system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anup Choudhary",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.278.1",
+    "body-parser": "^1.18.2",
+    "bookshelf": "^0.12.1",
+    "bookshelf-eloquent": "^0.1.15",
+    "busboy": "^0.2.14",
+    "change-case": "^3.0.2",
+    "copy-dir": "^0.3.0",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "fs-extra": "^6.0.1",
+    "hogan.js": "^3.0.2",
+    "jsonwebtoken": "^8.2.0",
+    "knex": "^0.14.4",
+    "multer": "^1.3.0",
+    "multer-s3": "^2.7.0",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.5",
+    "nodemon": "^1.18.2",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "promise": "^8.0.1",
+    "promise-sequential": "^1.1.1",
+    "request": "^2.87.0",
+    "underscore": "^1.8.3"
+  }
+}
