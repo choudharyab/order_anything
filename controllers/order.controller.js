@@ -131,10 +131,12 @@ module.exports.assignOrder=function(req,res)
 /***************************update order status****************************************/
    module.exports.updateOrderStatus=function(req,res)
    {
+     console.log(req.params);
    	 Order.forge({id:req.params.order_id})
         	      .fetch()
     			  .then(function(order1){
     			  	OrderStage.forge({order_stages:req.params.order_stages})
+                              .fetch()
     			  	    	  .then(function(orderstage){
                               		Order.save({
                 						order_stages_id:orderstage.id

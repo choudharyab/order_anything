@@ -19,7 +19,7 @@ module.exports.checkCredentials = function(req, res){
             }else{
                 res.json({
                     type:false,
-                    error: 'Incorrect email or password'
+                    error: 'Incorrect phone_no or password'
                 });
             }
         })
@@ -40,7 +40,7 @@ module.exports.signUp=function(req,res)
         if(user){         
             res.json({
                 type: false,
-                error: 'It looks like you have already registered using this email'
+                error: 'It looks like you have already registered using this phone_no'
             });
         }else{
             UserType.forge({ role: req.body.role})
